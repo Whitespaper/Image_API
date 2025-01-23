@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机图片自动跳转</title>
+    <script>
+        // 当页面加载时自动执行
+        window.onload = function() {
+            var randomIndex = Math.floor(Math.random() * 20);  // 生成一个0到19之间的随机数
+            // 存储图片页面的链接
+            var urls = [
+                "https://i0.hdslb.com/bfs/article/6762f4bed16128fda256450ec96a8e4e081fe229.png@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/5720b03ed4d8600aaeb4b599670a1d7329d2d039.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/45c9974616488fd3098e63e9e227003e06abdcb5.png@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/7aa4aaf921b52c068da577ce25bbf2c9256fb1a0.png@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/213ad44add29b06616b13082d58f6640aa6feb0d.jpg@1192w_596h.avif",
+                "https://i0.hdslb.com/bfs/article/66c8aebb1c7fbefa247f7bd702188ae523b27513.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/ff5782bb568d8b16c2ffa73bf84f892da81df2e8.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/c8d9c7dbe2045509454adc1832f70af1aab7ae3e.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/be72f412f9d873b8224e02dc9d9ee65ce006b495.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/4e08f0775e71ba30a36d38bd6db06d3283f44b71.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/bc40eac9093a56b2c5792d741b599e5f675f2059.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/b53bbb15c65118b2dd3300c6aeb718d4ab80f417.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/7581d656abfdf48486b09225b1e7bf0ef03da7ae.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/cd10972a4900debaf648b916d43ec76ade2fa7ae.png@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/3091871cb4c504a372f2d1d2b815231d51d8eb68.jpg@1192w.avif",
+                "https://i0.hdslb.com/bfs/article/9239a2ac3dd4fd285411e64fe96d0b24bd08e509.png@1192w_1192h.avif",
+                "https://tse2-mm.cn.bing.net/th/id/OIP-C.rjVWqcAd2gHY1zhhRvayxwHaKe?rs=1&pid=ImgDetMain",
+                "https://i.bobopic.com/small/106925521.jpg",
+                "https://tse4-mm.cn.bing.net/th/id/OIP-C.mhAUiK-gXZjmb9L3tmv4UQHaKX?rs=1&pid=ImgDetMain"
+            ];
+
+            // 自动跳转到对应的链接
+            window.location.href = urls[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <!-- 页面内容可以为空，因为它会直接跳转 -->
+</body>
+</html>
